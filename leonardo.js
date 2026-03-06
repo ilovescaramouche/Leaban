@@ -36,6 +36,243 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 const lessons = [
+  // 1st Quarter – Lesson 1
+  `
+  <h2>1st Quarter – Lesson 1 (Introduction to CSS)</h2>
+  <p>CSS stands for Cascading Style Sheets. It describes how HTML elements are displayed on screen, paper, or in other media. CSS saves a lot of work because it can control the layout of multiple web pages all at once.</p>
+  <h3>Why use CSS?</h3>
+  <ul>
+    <li>Defines styles for web pages including design, layout, and variations for different devices.</li>
+    <li>Provides consistency across web pages.</li>
+    <li>Saves time: one CSS file can control multiple pages.</li>
+    <li>Improves accessibility and responsiveness.</li>
+    <li>Enhances design with layout, colors, and animations.</li>
+  </ul>
+  <h3>Layers of a Webpage</h3>
+  <ul>
+    <li><b>Content Layer</b> – HTML defines text, images, and media.</li>
+    <li><b>Presentation Layer</b> – CSS defines how people see the page.</li>
+    <li><b>Behavior Layer</b> – JavaScript adds interactivity.</li>
+  </ul>
+  `,
+
+  // 1st Quarter – Lesson 2
+  `
+  <h2>1st Quarter – Lesson 2 (Hyperlinks)</h2>
+  <p>Hyperlinks are reference links that allow navigation to another page of the same document or to another document. They are enclosed between <code>&lt;a&gt;</code> tags with an <code>href</code> attribute specifying the target URL.</p>
+  <h3>Examples</h3>
+  <ul>
+    <li><code>&lt;a href="http://www.google.com" target="_self"&gt;Google&lt;/a&gt;</code></li>
+    <li><code>&lt;a href="http://www.msn.com" target="_blank"&gt;MSN&lt;/a&gt;</code></li>
+    <li><code>&lt;a name="sample"&gt;&lt;/a&gt;</code> creates an internal anchor.</li>
+  </ul>
+  <h3>Target Attribute Values</h3>
+  <ul>
+    <li><code>_blank</code> – opens in a new window.</li>
+    <li><code>_self</code> – opens in the same frame.</li>
+    <li><code>_parent</code> – opens in the parent frameset.</li>
+    <li><code>_top</code> – opens in the full body of the window.</li>
+  </ul>
+  `,
+
+  // 1st Quarter – Lesson 3
+  `
+  <h2>1st Quarter – Lesson 3 (HTML Links and Forms)</h2>
+  <p>HTML links use the anchor tag <code>&lt;a&gt;</code> to connect pages or resources. Links can be text, images, or other elements. Forms allow gathering feedback and input from users.</p>
+  <h3>Form Elements</h3>
+  <ul>
+    <li>Textboxes</li>
+    <li>Password boxes</li>
+    <li>Radio buttons</li>
+    <li>Check boxes</li>
+    <li>Dropdown menus</li>
+    <li>Text areas</li>
+    <li>Submit and Reset buttons</li>
+  </ul>
+  <p>Forms use the <code>&lt;form&gt;</code> tag with attributes like <code>action</code> (where data is sent) and <code>method</code> (GET or POST).</p>
+  `,
+
+  // 1st Quarter – Lesson 4
+  `
+  <h2>1st Quarter – Lesson 4 (Input Types and Forms)</h2>
+  <p>HTML5 introduced new input types that enhance forms and validation. The <code>&lt;input&gt;</code> tag is used to declare an input control.</p>
+  <h3>Examples of Input Types</h3>
+  <ul>
+    <li><b>color</b> – selects a color.</li>
+    <li><b>date</b> – defines a date control.</li>
+    <li><b>email</b> – defines a field for an email address.</li>
+    <li><b>month</b> – defines a month and year control.</li>
+    <li><b>number</b> – numeric field with min/max.</li>
+    <li><b>range</b> – slider for approximate values.</li>
+    <li><b>search</b> – search field.</li>
+    <li><b>time</b> – time selector.</li>
+    <li><b>url</b> – URL input field.</li>
+    <li><b>tel</b> – telephone number field.</li>
+  </ul>
+  `,
+
+  // 1st Quarter – Lesson 5
+  `
+  <h2>1st Quarter – Lesson 5 (Input Element Attributes)</h2>
+  <p>The <code>&lt;input&gt;</code> element can be customized with attributes to control its behavior.</p>
+  <h3>Common Attributes</h3>
+  <ul>
+    <li><b>name</b> – assigns a name to the input field.</li>
+    <li><b>type</b> – specifies the type (text, password, checkbox, radio, submit, reset).</li>
+    <li><b>size</b> – sets the size of the input field.</li>
+    <li><b>value</b> – sets the initial value or button label.</li>
+    <li><b>checked</b> – sets default selection for radio/checkbox.</li>
+  </ul>
+  <h3>Other Input Types</h3>
+  <ul>
+    <li>file</li>
+    <li>image</li>
+    <li>hidden</li>
+    <li>button</li>
+  </ul>
+  `,
+
+  // 1st Quarter – Lesson 6
+  `
+  <h2>1st Quarter – Lesson 6 (Radio Buttons, Checkboxes, Dropdowns)</h2>
+  <p>Forms can include different input controls for user choices.</p>
+  <h3>Radio Buttons</h3>
+  <p>Allow only one selection in a group. Example: <code>&lt;input type="radio" name="gender"&gt;</code>.</p>
+  <h3>Checkboxes</h3>
+  <p>Allow multiple selections. Example: <code>&lt;input type="checkbox" name="hobby"&gt;</code>.</p>
+  <h3>Dropdown Menus</h3>
+  <p>Created with <code>&lt;select&gt;&lt;option&gt;</code>. Attributes include <b>name</b>, <b>size</b>, and <b>selected</b> for default choice.</p>
+  `,
+
+  // 1st Quarter – Lesson 7
+  `
+  <h2>1st Quarter – Lesson 7 (Forms: Submit, Reset, File Upload)</h2>
+  <p>Forms often include buttons and file inputs.</p>
+  <h3>Submit Button</h3>
+  <p>Sends form data to the server. Example: <code>&lt;input type="submit" value="Submit"&gt;</code>.</p>
+  <h3>Reset Button</h3>
+  <p>Clears all form inputs. Example: <code>&lt;input type="reset" value="Reset"&gt;</code>.</p>
+  <h3>File Upload</h3>
+  <p>Allows users to upload files. Example: <code>&lt;input type="file" name="image" accept="image/*"&gt;</code>.</p>
+  <h3>Other Attributes</h3>
+  <ul>
+    <li><b>accept</b> – specifies file types.</li>
+    <li><b>multiple</b> – allows multiple file uploads.</li>
+  </ul>
+    `,
+  // 2nd Quarter – Lesson 1
+  `
+  <h2>2nd Quarter – Lesson 1 (CSS Basics)</h2>
+  <p>CSS is the language we use to style a web page. It separates content from design, making websites easier to maintain and more attractive.</p>
+  <h3>Structure of CSS</h3>
+  <ul>
+    <li><b>Selector</b> – the HTML element you want to style.</li>
+    <li><b>Property</b> – the style attribute you want to modify.</li>
+    <li><b>Value</b> – the setting applied to the property.</li>
+    <li><b>Declaration</b> – a single instruction (property + value).</li>
+    <li><b>Declaration Block</b> – one or more declarations inside braces.</li>
+  </ul>
+  <h3>Three Kinds of CSS</h3>
+  <ul>
+    <li><b>External</b> – stored in a .css file, linked with <code>&lt;link&gt;</code>.</li>
+    <li><b>Embedded/Internal</b> – defined inside <code>&lt;style&gt;</code> in the HTML head.</li>
+    <li><b>Inline</b> – defined directly in the element’s <code>style</code> attribute.</li>
+  </ul>
+  `,
+
+  // 2nd Quarter – Lesson 2
+  `
+  <h2>2nd Quarter – Lesson 2 (Style Sheets)</h2>
+  <p>Style sheets are sets of instructions to a web browser on how to display elements on a page. They separate content (HTML) from appearance (CSS).</p>
+  <h3>Parts of a CSS Rule</h3>
+  <ul>
+    <li><b>Selector</b> – identifies the HTML element.</li>
+    <li><b>Property</b> – the style attribute to change.</li>
+    <li><b>Value</b> – the setting applied to the property.</li>
+  </ul>
+  <h3>Kinds of CSS</h3>
+  <ul>
+    <li><b>External</b> – linked via <code>&lt;link&gt;</code> tag.</li>
+    <li><b>Embedded/Internal</b> – defined inside <code>&lt;style&gt;</code> in the head.</li>
+    <li><b>Inline</b> – defined directly in the element’s <code>style</code> attribute.</li>
+  </ul>
+  `,
+
+  // 2nd Quarter – Lesson 3
+  `
+  <h2>2nd Quarter – Lesson 3 (Inline, Internal, External CSS)</h2>
+  <p>CSS can be applied in three ways: inline, internal, and external.</p>
+  <h3>Inline Style Sheets</h3>
+  <p>Defined directly in the element’s <code>style</code> attribute. Example: <code>&lt;p style="color:red;"&gt;</code>.</p>
+  <h3>Internal/Embedded Style Sheets</h3>
+  <p>Defined inside <code>&lt;style&gt;</code> in the head section. Applies to the whole document.</p>
+  <h3>External Style Sheets</h3>
+  <p>Stored in a separate .css file and linked with <code>&lt;link&gt;</code>. Allows consistent styling across multiple pages.</p>
+  <h3>Display Property</h3>
+  <ul>
+    <li><b>block</b> – elements stack vertically.</li>
+    <li><b>inline</b> – elements flow horizontally.</li>
+    <li><b>none</b> – element is hidden.</li>
+    <li><b>list-item</b> – displays as a list item.</li>
+  </ul>
+  <h3>Div and Span Tags</h3>
+  <p><b>&lt;div&gt;</b> – block-level container for grouping content.<br><b>&lt;span&gt;</b> – inline container for styling parts of text.</p>
+  `,
+
+  // 2nd Quarter – Lesson 4
+  `
+  <h2>2nd Quarter – Lesson 4 (CSS Rules and Classes)</h2>
+  <p>A CSS rule has two parts: a selector and a declaration block. Classes are user-defined selectors applied to specific HTML elements.</p>
+  <h3>Classes</h3>
+  <ul>
+    <li>Defined with a dot (.) followed by the class name.</li>
+    <li>Reusable across multiple elements.</li>
+    <li>Can be combined with element selectors (e.g., <code>p.note</code>).</li>
+  </ul>
+  <h3>Examples</h3>
+  <ul>
+    <li><code>.highlight { background-color: yellow; }</code></li>
+    <li><code>p.note { color: blue; }</code></li>
+  </ul>
+  `,
+
+  // 2nd Quarter – Lesson 5
+  `
+  <h2>2nd Quarter – Lesson 5 (CSS Selectors)</h2>
+  <p>Selectors are used to target HTML elements for styling. There are six main types:</p>
+  <ul>
+    <li><b>Element Selector</b> – targets all instances of a tag (e.g., <code>p {}</code>).</li>
+    <li><b>ID Selector</b> – targets a unique element using <code>#id</code>.</li>
+    <li><b>Class Selector</b> – targets elements with a specific class using <code>.classname</code>.</li>
+    <li><b>Universal Selector</b> – targets all elements using <code>*</code>.</li>
+    <li><b>Group Selector</b> – applies styles to multiple selectors separated by commas.</li>
+    <li><b>Attribute Selector</b> – targets elements based on attributes (e.g., <code>input[type="text"]</code>).</li>
+  </ul>
+  `,
+
+  // 2nd Quarter – Lesson 6
+  `
+  <h2>2nd Quarter – Lesson 6 (CSS Dimensions and Pseudo-Classes)</h2>
+  <p>CSS can control dimensions and visibility of elements, as well as link behaviors using pseudo-classes.</p>
+  <h3>Dimension Properties</h3>
+  <ul>
+    <li><b>width</b> – sets element width.</li>
+    <li><b>height</b> – sets element height.</li>
+    <li><b>line-height</b> – sets line spacing.</li>
+    <li><b>max-height</b>, <b>min-height</b>, <b>max-width</b>, <b>min-width</b> – set limits.</li>
+    <li><b>visibility</b> – controls whether an element is visible, hidden, or collapsed.</li>
+  </ul>
+  <h3>Pseudo-Classes for Links</h3>
+  <ul>
+    <li><code>:link</code> – unvisited links.</li>
+    <li><code>:visited</code> – visited links.</li>
+    <li><code>:hover</code> – when mouse hovers.</li>
+    <li><code>:active</code> – when clicked.</li>
+    <li><code>:focus</code> – when focused.</li>
+  </ul>
+  <p>The order of pseudo-classes is important: LVHA (Link, Visited, Hover, Active).</p>
+  `,
+
   // 3rd Quarter Lesson 1
   `
   <h2>3rd Quarter – Lesson 1 (Typography & Text Properties)</h2>
@@ -371,13 +608,18 @@ function showLesson(index) {
                     dialogueName.textContent = "Video";
                     dialogueContent.innerHTML = `
                     <div class="video-preview">
-                        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
-                            <img src="images/video_thumbnail.png" alt="Watch video" class="video-thumb">
-                        </a>
+                        <div class="facebook-video">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F18BEN3S31Z%2F&show_text=0&width=560"
+                                allowfullscreen
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
                     </div>
                     <div class="video-reflection">
                         <h3>Reflection</h3>
-                        <p>Write your thoughts here after watching the video.</p>
+                        <p>As Padre Damaso and the main scriptwriter of Noli Me Tangere, I contributed to the play by doing my 
+                        part and oftentimes assisting with the props members and keeping them company.</p>
+                        <p> I was very satisfied with how the play turned out and I am grateful that I was able to play such a big part in it. </p>
                     </div>`;
                     nextBtn.onclick = null; // no next for video
                 }
