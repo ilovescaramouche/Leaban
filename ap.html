@@ -20,31 +20,45 @@
         </div>
     </nav> 
 
-    <!-- Header -->
-    <header class="ap-header">
-        <h1>Welcome, Sir Calimbas <span class="heart">♥</span></h1>
-        <p>Tara at basahin mo ang aking ginawang mga notes.</p>
-    </header>
-
     <!-- Main layout -->
     <div class="ap-container">
         <!-- Left column -->
         <aside class="ap-left">
-            <!-- Mood Indicators -->
-            <div class="mood-indicators">
-                <h2>Lessons</h2>
-                <button onclick="showapLesson(1)">Lesson 1</button>
-                <button onclick="showapLesson(2)">Lesson 2</button>
-                <button onclick="showapLesson(3)">Lesson 3</button>
-                <button onclick="showapLesson(4)">Lesson 4</button>
-                <button onclick="showapLesson(5)">Lesson 5</button>
-                <button onclick="showapLesson(6)">Lesson 6</button>
+            <!-- Header + Lesson list (top left) -->
+            <div class="ap-left-top">
+                <header class="ap-header">
+                    <div class="ap-header__profile">
+                        <img src="images/icon.png" alt="Profile" class="ap-header__avatar">
+                        <div>
+                            <h1>Welcome, Ginoong Raymundo S. Calimbas <span class="heart">♥</span></h1>
+                            <p>Tara at basahin mo ang aking ginawang mga notes.</p>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="mood-indicators">
+                    <h2>Lessons</h2>
+                    <button onclick="showapLesson(1)">Lesson 1</button>
+                    <button onclick="showapLesson(2)">Lesson 2</button>
+                    <button onclick="showapLesson(3)">Lesson 3</button>
+                    <button onclick="showapLesson(4)">Lesson 4</button>
+                    <button onclick="showapLesson(5)">Lesson 5</button>
+                    <button onclick="showapLesson(6)">Lesson 6</button>
+                    <button onclick="showapLesson(7)">Lesson 7</button>
+                    <button onclick="showapLesson(8)">Lesson 8</button>
+                    <button onclick="showapLesson(9)">Lesson 9</button>
+                    <button onclick="showapLesson(10)">Lesson 10</button>
+                </div>
             </div>
 
             <!-- Buddy Maps -->
             <div class="buddy-maps">
                 <h2>AP Lesson Reflection</h2>
                 <p id="lesson-reflection">Select a lesson to see reflection...</p>
+
+                <div class="buddy-map-banner">
+                    <img src="images/mizi.jpg" alt="Mizi" class="buddy-map-img">
+                </div>
             </div>
         </aside>
 
