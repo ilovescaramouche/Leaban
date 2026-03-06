@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Content</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="leonardo.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/icon.png" alt="Site Icon" class="nav-icon" id="nav-toggle">
+        </div>
+        <div class="nav-center" id="nav-links">
+            <a href="ict.html">ICT Content</a>
+            <a href="ap.html">AP Content</a>
+            <a href="index.html">Personal Content</a>
+        </div>
+    </nav>
+
+    <h1 style="text-align:center;"> Click Us !!!! <3 <</h1>
+
+    <!-- Character Selection -->
+    <section class="characters">
+        <label>
+            <input type="radio" name="character" value="lessons">
+            <img src="images/char1.png" alt="Character 1" class="char-img">
+        </label>
+        <label>
+            <input type="radio" name="character" value="events">
+            <img src="images/char2.png" alt="Character 2" class="char-img">
+        </label>
+        <label>
+            <input type="radio" name="character" value="video">
+            <img src="images/char3.png" alt="Character 3" class="char-img">
+        </label>
+    </section>
+
+    <!-- Dialogue Box -->
+    <div class="dialogue-box" id="dialogue-box">
+        <div class="dialogue-header">
+            <span class="dialogue-name" id="dialogue-name">Ren</span>
+        </div>
+        <div class="dialogue-content" id="dialogue-content">
+            <!-- Content injected by JS -->
+        </div>
+        <button id="next-btn">Next</button>
+    </div>
+</body>
+</html>

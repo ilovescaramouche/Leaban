@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Content</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="leonardo.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="images/icon.png" alt="Site Icon" class="nav-icon" id="nav-toggle">
+        </div>
+        <div class="nav-center" id="nav-links">
+            <a href="ict.html">ICT Content</a>
+            <a href="ap.html">AP Content</a>
+            <a href="index.html">Personal Content</a>
+        </div>
+    </nav> 
+
+    <!-- Header -->
+    <header class="ap-header">
+        <h1>Welcome, Sir Calimbas <span class="heart">♥</span></h1>
+        <p>Tara at basahin mo ang aking ginawang mga notes.</p>
+    </header>
+
+    <!-- Main layout -->
+    <div class="ap-container">
+        <!-- Left column -->
+        <aside class="ap-left">
+            <!-- Mood Indicators -->
+            <div class="mood-indicators">
+                <h2>Lessons</h2>
+                <button onclick="showapLesson(1)">Lesson 1</button>
+                <button onclick="showapLesson(2)">Lesson 2</button>
+                <button onclick="showapLesson(3)">Lesson 3</button>
+                <button onclick="showapLesson(4)">Lesson 4</button>
+                <button onclick="showapLesson(5)">Lesson 5</button>
+                <button onclick="showapLesson(6)">Lesson 6</button>
+            </div>
+
+            <!-- Buddy Maps -->
+            <div class="buddy-maps">
+                <h2>AP Lesson Reflection</h2>
+                <p id="lesson-reflection">Select a lesson to see reflection...</p>
+            </div>
+        </aside>
+
+        <!-- Right column -->
+        <section class="corupdates">
+            <h2>AP Lesson Information</h2>
+            <div id="lesson-info">Select a lesson to see information...</div>
+        </section>
+    </div>
+
+</body>
+</html>
