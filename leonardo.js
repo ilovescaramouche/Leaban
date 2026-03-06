@@ -31,25 +31,219 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Lessons (replace with your actual lesson text)
-    const lessons = [
-        "Lesson 1: Introduction to HTML basics",
-        "Lesson 2: Understanding CSS selectors",
-        "Lesson 3: Adding images and links",
-        "Lesson 4: Layout with Flexbox",
-        "Lesson 5: Responsive design principles",
-        "Lesson 6: Introduction to JavaScript",
-        "Lesson 7: Variables and Data Types",
-        "Lesson 8: Functions and Events",
-        "Lesson 9: DOM Manipulation",
-        "Lesson 10: Forms and Validation",
-        "Lesson 11: Multimedia in Webpages",
-        "Lesson 12: CSS Transitions and Animations",
-        "Lesson 13: Advanced Flexbox/Grid",
-        "Lesson 14: Accessibility in Web Design",
-        "Lesson 15: Debugging and Best Practices",
-        "Lesson 16: Final Project Showcase"
-    ];
-    let lessonIndex = 0;
+const lessons = [
+  // 3rd Quarter Lessons
+  `3rd Quarter Lesson 1 (Typography & Text Properties)
+Typography refers to the styling and arrangement of text on a web page using CSS. It ensures legibility, readability, and visual appeal.
+
+Font Properties:
+- font-family: Specifies the typeface (e.g., Arial, Times New Roman).
+- font-size: Sets the size of the text.
+- font-weight: Defines boldness/thickness.
+- font-style: Normal, italic, or oblique.
+- font-variant: Normal or small-caps.
+
+Text Properties:
+- line-height: Vertical spacing between lines.
+- letter-spacing: Horizontal spacing between characters.
+- text-align: Aligns text (left, right, center, justify).
+- text-indent: Indents the first line of a block.
+- color: Sets text color.
+- white-space: Controls how spaces are handled.
+- word-spacing: Spacing between words.
+- word-break: Defines how words break at line ends.
+- text-decoration: Underline, overline, line-through.
+- text-transform: Capitalize, uppercase, lowercase.
+- text-shadow: Adds shadow to text.`,
+
+  `3rd Quarter Lesson 2 (Formatting Text with CSS)
+Formatting Text with CSS includes:
+- Bold text
+- Italic text
+- Indenting text
+- Changing font family and size
+- Changing text alignment
+- Changing line spacing
+- Changing text color
+- Adding background color to text
+
+Examples:
+- Indenting Text: text-indent property
+- Changing Text Case: text-transform property
+- Line Spacing: line-height property
+- Background Color: background-color property`,
+
+  `3rd Quarter Lesson 3 (Formatting Layout with CSS)
+Box Model:
+- Each element exists in its own box: margins, borders, padding, content.
+- Control dimensions with height and width.
+- Use block-level tags (<p>, <h1>, <div>).
+
+Element Positioning:
+- static, relative, absolute, fixed.
+
+Offset Properties:
+- top, right, bottom, left.
+
+Float Property:
+- float: left, right, none.
+- Used for wrapping text around images.
+
+Background Properties:
+- background-color, background-image, background-repeat, background-position, background-attachment.
+
+Margins:
+- margin-top, margin-bottom, margin-left, margin-right.
+- Shorthand: margin: top right bottom left.`,
+
+  `3rd Quarter Lesson 4 (Formatting Borders & Tables)
+Borders:
+- border-width: thin, medium, thick, px, em.
+- border-color: color names, hex values, RGB.
+- border-style: hidden, dotted, dashed, solid, double, groove, ridge, inset, outset.
+
+Padding:
+- padding-top, padding-bottom, padding-left, padding-right.
+- Shorthand: padding: top right bottom left.
+
+Tables:
+- Table Background: background-color property.
+- Table Style: highlight rows, banners, text alignment.
+- Table Layout: use <table> to structure webpage content.`,
+
+  // 4th Quarter Lessons
+  `4th Quarter Lesson 1 (JavaScript Introduction)
+Purpose:
+JavaScript creates dynamic, interactive user experiences, handling UI rendering, content loading, real-time updates, personalized feeds, video controls, and tracking user activity.
+
+Static vs Dynamic Websites:
+- Static: delivered exactly as stored (e.g., portfolio).
+- Dynamic: displays different content based on user actions (e.g., social media).
+
+JavaScript Overview:
+- Most popular scripting language.
+- Works in all major browsers.
+- Developed by Brendan Eich (Mocha → LiveScript → JavaScript).
+- Enhances webpages, builds games.
+- Licensed by Oracle, used by Mozilla.
+- Client-side, high-level, interpreted, object-oriented.
+- Case-sensitive, semi-colons optional.
+
+What JavaScript Can Do:
+- React to events
+- Validate forms
+- Create cookies
+- Enhance webpages
+
+Events:
+- UI events, focus/blur, mouse, keyboard, form, mutation, HTML5, CSS.
+
+Form Validation:
+- Validates input client-side.
+
+Cookies:
+- Text files storing user interactions and preferences.
+
+Features:
+- Structured programming syntax in C.
+- Dynamic typing.
+- Runs locally for faster interaction.
+- Detects user actions.
+- Combines with CSS for DHTML effects.
+
+Characteristics:
+- Lightweight, easy to learn.
+- Inserted into HTML pages.
+- Supported by all browsers.
+- Quick to download, license-free.
+- Large online community.
+
+Disadvantages:
+- Some browsers do not support JS.
+- Secrets can be extracted.
+- JS + DOM can be exploited.
+- Source code can be reverse engineered.
+
+Note:
+JavaScript uses objects, methods, properties. Tools needed: text editor + browser.
+
+How to Start:
+- Use <script> tags.
+- Output with document.write.
+
+Difference Between HTML, CSS, JS:
+- HTML: structure/layout.
+- CSS: style/responsiveness.
+- JS: interactivity, complex functions.`,
+
+  `4th Quarter Lesson 2 (Formatting Text & Borders with CSS)
+Formatting Text:
+- Indenting text: text-indent.
+- Changing text case: text-transform.
+- Line spacing: line-height.
+- Background color: background-color.
+
+Borders:
+- border-style: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden.
+- border-width: thin, medium, thick, px, pt, cm, em.
+- border-color: names, hex, RGB, HSL, transparent.
+- Individual sides: border-top-width, border-right-width, border-bottom-width, border-left-width.
+
+Lists:
+- list-style-type: disc, circle, square, decimal, roman, alpha.
+- list-style-image: custom bullet images.
+- list-style-position: marker position.
+- list-style: shorthand.
+
+Pseudo-elements:
+- :link, :visited, :active, :hover, :focus
+- :first-letter, :first-line
+- :before, :after`,
+
+  `4th Quarter Lesson 3 (Formatting Layout with CSS)
+Box Model:
+- Margins, borders, padding, content.
+- Control dimensions with height/width.
+- Block-level tags (<p>, <h1>, <div>).
+
+Element Positioning:
+- static, relative, absolute, fixed.
+
+Offset:
+- top, right, bottom, left.
+
+Float:
+- float: left, right, none.
+- Wrap text around images.
+
+Background:
+- background-color, background-image, background-repeat, background-position, background-attachment.
+
+Margins:
+- margin-top, margin-bottom, margin-left, margin-right.
+- Shorthand: margin: top right bottom left.
+- Negative margins for effects.`,
+
+  `4th Quarter Lesson 4 (Formatting Borders & Tables)
+Borders:
+- border-width: thin, medium, thick, px, em.
+- border-color: names, hex, RGB.
+- border-style: hidden, dotted, dashed, solid, double, groove, ridge, inset, outset.
+
+Padding:
+- padding-top, padding-bottom, padding-left, padding-right.
+- Shorthand: padding: top right bottom left.
+- Default = 0.
+
+Tables:
+- Table Background: background-color.
+- Table Style: highlight rows, banners, text alignment.
+- Table Layout: use <table> for webpage structure.
+- Example: headers, links, content cells, quotes.`
+];
+
+let lessonIndex = 0;
+
 
     // Events (replace with your actual Q&A + images)
     const events = [
