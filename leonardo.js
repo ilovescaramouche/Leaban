@@ -1,4 +1,4 @@
-﻿// leonardo.js
+// leonardo.js - UPDATED VERSION
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Page loaded!");
@@ -36,244 +36,285 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 const lessons = [
+  // ==================== QUARTER 1 - 7 LESSONS ====================
+  
   // 1st Quarter – Lesson 1
   `
-  <h2>1st Quarter – Lesson 1 (Introduction to CSS)</h2>
-  <p>CSS stands for Cascading Style Sheets. It describes how HTML elements are displayed on screen, paper, or in other media. CSS saves a lot of work because it can control the layout of multiple web pages all at once.</p>
-  <h3>Why use CSS?</h3>
+  <h2>1st Quarter – Lesson 1 (Hyperlinks)</h2>
+  <h3>Prayer</h3>
+  <p>(Insert prayer text here)</p>
+  <h3>Hyperlinks</h3>
+  <p>Hyperlinks are reference links that allow navigation to another page of the same document or to another document.</p>
+  <h3>Types of Hyperlinks</h3>
   <ul>
-    <li>Defines styles for web pages including design, layout, and variations for different devices.</li>
-    <li>Provides consistency across web pages.</li>
-    <li>Saves time: one CSS file can control multiple pages.</li>
-    <li>Improves accessibility and responsiveness.</li>
-    <li>Enhances design with layout, colors, and animations.</li>
+    <li><b>Absolute</b> – full URL to a webpage</li>
+    <li><b>Relative</b> – links to pages within the same website</li>
+    <li><b>Named Anchor</b> – links to specific sections within a page</li>
   </ul>
-  <h3>Layers of a Webpage</h3>
+  <h3>Attributes of <a></h3>
   <ul>
-    <li><b>Content Layer</b> – HTML defines text, images, and media.</li>
-    <li><b>Presentation Layer</b> – CSS defines how people see the page.</li>
-    <li><b>Behavior Layer</b> – JavaScript adds interactivity.</li>
+    <li><b>href</b> – specifies the URL</li>
+    <li><b>target</b> – specifies where to open the link</li>
+    <li><b>name</b> – creates a named anchor</li>
+  </ul>
+  <h3>Target Attribute Values</h3>
+  <ul>
+    <li><b>_blank</b> – opens in a new window</li>
+    <li><b>_self</b> – opens in the same frame</li>
+    <li><b>_parent</b> – opens in the parent frameset</li>
+    <li><b>_top</b> – opens in the full body of the window</li>
   </ul>
   `,
 
   // 1st Quarter – Lesson 2
   `
-  <h2>1st Quarter – Lesson 2 (Hyperlinks)</h2>
-  <p>Hyperlinks are reference links that allow navigation to another page of the same document or to another document. They are enclosed between <code>&lt;a&gt;</code> tags with an <code>href</code> attribute specifying the target URL.</p>
-  <h3>Examples</h3>
+  <h2>1st Quarter – Lesson 2 (Hyperlinks & Email)</h2>
+  <h3>Hyperlinks: Target Attribute Examples</h3>
+  <p>Examples of using target attributes to control link behavior.</p>
+  <h3>Email Links</h3>
+  <p>Use <code>mailto:</code> to create email links:</p>
   <ul>
-    <li><code>&lt;a href="http://www.google.com" target="_self"&gt;Google&lt;/a&gt;</code></li>
-    <li><code>&lt;a href="http://www.msn.com" target="_blank"&gt;MSN&lt;/a&gt;</code></li>
-    <li><code>&lt;a name="sample"&gt;&lt;/a&gt;</code> creates an internal anchor.</li>
+    <li><code><a href="mailto:email@example.com">Send Email</a></code></li>
   </ul>
-  <h3>Target Attribute Values</h3>
+  <h3>Linking to External Pages</h3>
+  <p>Creating links to other websites using absolute URLs.</p>
+  <h3>Target Attribute Examples</h3>
   <ul>
-    <li><code>_blank</code> – opens in a new window.</li>
-    <li><code>_self</code> – opens in the same frame.</li>
-    <li><code>_parent</code> – opens in the parent frameset.</li>
-    <li><code>_top</code> – opens in the full body of the window.</li>
+    <li><code>_self</code> – opens in the same frame</li>
+    <li><code>_blank</code> – opens in a new window</li>
+    <li><code>_parent</code> – opens in parent frame</li>
+    <li><code>_top</code> – opens in full window</li>
   </ul>
   `,
 
   // 1st Quarter – Lesson 3
   `
-  <h2>1st Quarter – Lesson 3 (HTML Links and Forms)</h2>
-  <p>HTML links use the anchor tag <code>&lt;a&gt;</code> to connect pages or resources. Links can be text, images, or other elements. Forms allow gathering feedback and input from users.</p>
-  <h3>Form Elements</h3>
+  <h2>1st Quarter – Lesson 3 (HTML Links & Forms)</h2>
+  <h3>HTML Links</h3>
+  <ul>
+    <li><b>External links</b> – links to other websites</li>
+    <li><b>Internal links</b> – links to pages within the same website</li>
+    <li><b>Dead links</b> – links that lead to non-existent pages</li>
+  </ul>
+  <h3>Anchor Tag <a></h3>
+  <p>The anchor tag is used to create hyperlinks.</p>
+  <h3>Using GIFs/Graphics as Links</h3>
+  <p>Wrap an image tag with anchor tags to create image links.</p>
+  <h3>Forms</h3>
+  <p>Forms allow gathering feedback and input from users.</p>
+  <h3>Form Attributes</h3>
+  <ul>
+    <li><b>action</b> – specifies where to send form data</li>
+    <li><b>method</b> – specifies how to send data (GET/POST)</li>
+  </ul>
+  <h3>Input Elements</h3>
   <ul>
     <li>Textboxes</li>
-    <li>Password boxes</li>
+    <li>Password fields</li>
     <li>Radio buttons</li>
-    <li>Check boxes</li>
+    <li>Checkboxes</li>
     <li>Dropdown menus</li>
     <li>Text areas</li>
-    <li>Submit and Reset buttons</li>
+    <li>Submit/Reset buttons</li>
   </ul>
-  <p>Forms use the <code>&lt;form&gt;</code> tag with attributes like <code>action</code> (where data is sent) and <code>method</code> (GET or POST).</p>
   `,
 
   // 1st Quarter – Lesson 4
   `
-  <h2>1st Quarter – Lesson 4 (Input Types and Forms)</h2>
-  <p>HTML5 introduced new input types that enhance forms and validation. The <code>&lt;input&gt;</code> tag is used to declare an input control.</p>
-  <h3>Examples of Input Types</h3>
+  <h2>1st Quarter – Lesson 4 (HTML5 Input Types)</h2>
+  <h3>Input Type Tags in HTML5</h3>
   <ul>
-    <li><b>color</b> – selects a color.</li>
-    <li><b>date</b> – defines a date control.</li>
-    <li><b>email</b> – defines a field for an email address.</li>
-    <li><b>month</b> – defines a month and year control.</li>
-    <li><b>number</b> – numeric field with min/max.</li>
-    <li><b>range</b> – slider for approximate values.</li>
-    <li><b>search</b> – search field.</li>
-    <li><b>time</b> – time selector.</li>
-    <li><b>url</b> – URL input field.</li>
-    <li><b>tel</b> – telephone number field.</li>
+    <li><b>color</b> – color picker</li>
+    <li><b>date</b> – date picker</li>
+    <li><b>email</b> – email input</li>
+    <li><b>month</b> – month picker</li>
+    <li><b>datetime</b> – date and time picker</li>
+    <li><b>number</b> – numeric input</li>
+    <li><b>range</b> – slider control</li>
+    <li><b>search</b> – search field</li>
+    <li><b>time</b> – time picker</li>
+    <li><b>url</b> – URL input</li>
+    <li><b>tel</b> – telephone input</li>
+  </ul>
+  <h3>Form Attributes</h3>
+  <ul>
+    <li><b>autocomplete</b> – enables autocomplete</li>
+    <li><b>novalidate</b> – disables validation</li>
+  </ul>
+  <h3>Input Attributes</h3>
+  <ul>
+    <li><b>autofocus</b> – focuses on input</li>
+    <li><b>formaction</b> – form submission URL</li>
+    <li><b>placeholder</b> – placeholder text</li>
+    <li><b>required</b> – makes field required</li>
+    <li><b>pattern</b> – regex pattern</li>
+    <li><b>multiple</b> – allows multiple values</li>
   </ul>
   `,
 
   // 1st Quarter – Lesson 5
   `
-  <h2>1st Quarter – Lesson 5 (Input Element Attributes)</h2>
-  <p>The <code>&lt;input&gt;</code> element can be customized with attributes to control its behavior.</p>
-  <h3>Common Attributes</h3>
+  <h2>1st Quarter – Lesson 5 (Input Element Types)</h2>
+  <h3>Input Element <input> Types</h3>
   <ul>
-    <li><b>name</b> – assigns a name to the input field.</li>
-    <li><b>type</b> – specifies the type (text, password, checkbox, radio, submit, reset).</li>
-    <li><b>size</b> – sets the size of the input field.</li>
-    <li><b>value</b> – sets the initial value or button label.</li>
-    <li><b>checked</b> – sets default selection for radio/checkbox.</li>
+    <li><b>text</b> – single-line text</li>
+    <li><b>password</b> – password field</li>
+    <li><b>checkbox</b> – checkboxes</li>
+    <li><b>radio</b> – radio buttons</li>
+    <li><b>submit</b> – submit button</li>
+    <li><b>reset</b> – reset button</li>
+    <li><b>color, date, datetime, email, month, number, range, search, tel, time, url, file, image</b></li>
   </ul>
-  <h3>Other Input Types</h3>
+  <h3>Input Attributes</h3>
   <ul>
-    <li>file</li>
-    <li>image</li>
-    <li>hidden</li>
-    <li>button</li>
+    <li><b>name</b> – field name</li>
+    <li><b>type</b> – input type</li>
+    <li><b>size</b> – field size</li>
+    <li><b>value</b> – default value</li>
+    <li><b>checked</b> – default selection</li>
   </ul>
+  <h3>Creating Textboxes and Text Areas</h3>
+  <p>Textboxes use <input type="text"> while text areas use <textarea> for multi-line input.</p>
   `,
 
   // 1st Quarter – Lesson 6
   `
   <h2>1st Quarter – Lesson 6 (Radio Buttons, Checkboxes, Dropdowns)</h2>
-  <p>Forms can include different input controls for user choices.</p>
   <h3>Radio Buttons</h3>
-  <p>Allow only one selection in a group. Example: <code>&lt;input type="radio" name="gender"&gt;</code>.</p>
+  <p>Allow only one selection in a group. All radio buttons in a group share the same name attribute.</p>
   <h3>Checkboxes</h3>
-  <p>Allow multiple selections. Example: <code>&lt;input type="checkbox" name="hobby"&gt;</code>.</p>
+  <p>Allow multiple selections. Each checkbox can be independently checked.</p>
   <h3>Dropdown Menus</h3>
-  <p>Created with <code>&lt;select&gt;&lt;option&gt;</code>. Attributes include <b>name</b>, <b>size</b>, and <b>selected</b> for default choice.</p>
+  <p>Created using <select> and <option> tags.</p>
+  <h3>Attributes</h3>
+  <ul>
+    <li><b>name</b> – field name</li>
+    <li><b>size</b> – number of visible options</li>
+    <li><b>value</b> – option value</li>
+    <li><b>selected</b> – default selected option</li>
+  </ul>
   `,
 
   // 1st Quarter – Lesson 7
   `
   <h2>1st Quarter – Lesson 7 (Forms: Submit, Reset, File Upload)</h2>
-  <p>Forms often include buttons and file inputs.</p>
-  <h3>Submit Button</h3>
-  <p>Sends form data to the server. Example: <code>&lt;input type="submit" value="Submit"&gt;</code>.</p>
-  <h3>Reset Button</h3>
-  <p>Clears all form inputs. Example: <code>&lt;input type="reset" value="Reset"&gt;</code>.</p>
-  <h3>File Upload</h3>
-  <p>Allows users to upload files. Example: <code>&lt;input type="file" name="image" accept="image/*"&gt;</code>.</p>
-  <h3>Other Attributes</h3>
+  <h3>Feedback Form</h3>
+  <p>Forms can send data using <code>action="mailto:..."</code></p>
+  <h3>Form Attributes</h3>
   <ul>
-    <li><b>accept</b> – specifies file types.</li>
-    <li><b>multiple</b> – allows multiple file uploads.</li>
+    <li><b>action</b> – where to send data</li>
+    <li><b>method</b> – GET or POST</li>
+    <li><b>enctype</b> – encoding type</li>
   </ul>
-    `,
+  <h3>Submit Button</h3>
+  <p><input type="submit"> - sends form data</p>
+  <h3>Reset Button</h3>
+  <p><input type="reset"> - clears all form inputs</p>
+  <h3>File Upload</h3>
+  <p><input type="file" accept="..."> - allows file uploads</p>
+  <h3>Accept Attribute Values</h3>
+  <ul>
+    <li>File extension (e.g., .pdf, .jpg)</li>
+    <li>audio/*</li>
+    <li>video/*</li>
+    <li>image/*</li>
+    <li>media_type</li>
+  </ul>
+  `,
+
+  // ==================== QUARTER 2 - 4 LESSONS ====================
+
   // 2nd Quarter – Lesson 1
   `
-  <h2>2nd Quarter – Lesson 1 (CSS Basics)</h2>
-  <p>CSS is the language we use to style a web page. It separates content from design, making websites easier to maintain and more attractive.</p>
-  <h3>Structure of CSS</h3>
+  <h2>2nd Quarter – Lesson 1 (CSS Introduction)</h2>
+  <h3>CSS Definition</h3>
+  <p>CSS stands for Cascading Style Sheets. It describes how HTML elements are displayed on screen.</p>
+  <h3>Why Use CSS?</h3>
   <ul>
-    <li><b>Selector</b> – the HTML element you want to style.</li>
-    <li><b>Property</b> – the style attribute you want to modify.</li>
-    <li><b>Value</b> – the setting applied to the property.</li>
-    <li><b>Declaration</b> – a single instruction (property + value).</li>
-    <li><b>Declaration Block</b> – one or more declarations inside braces.</li>
+    <li>Consistency across web pages</li>
+    <li>Saves time - one style sheet controls multiple pages</li>
+    <li>Accessibility and responsiveness</li>
+    <li>Design enhancements</li>
+    <li>Faster loading</li>
+    <li>Easier maintenance</li>
+    <li>Separation of structure and style</li>
   </ul>
-  <h3>Three Kinds of CSS</h3>
+  <h3>Layers of a Webpage</h3>
   <ul>
-    <li><b>External</b> – stored in a .css file, linked with <code>&lt;link&gt;</code>.</li>
-    <li><b>Embedded/Internal</b> – defined inside <code>&lt;style&gt;</code> in the HTML head.</li>
-    <li><b>Inline</b> – defined directly in the element’s <code>style</code> attribute.</li>
+    <li><b>Content Layer</b> – HTML defines text, images, and media</li>
+    <li><b>Presentation Layer</b> – CSS defines how people see the page</li>
+    <li><b>Behavior Layer</b> – JavaScript adds interactivity</li>
   </ul>
   `,
 
   // 2nd Quarter – Lesson 2
   `
-  <h2>2nd Quarter – Lesson 2 (Style Sheets)</h2>
-  <p>Style sheets are sets of instructions to a web browser on how to display elements on a page. They separate content (HTML) from appearance (CSS).</p>
-  <h3>Parts of a CSS Rule</h3>
+  <h2>2nd Quarter – Lesson 2 (CSS Structure & Types)</h2>
+  <h3>CSS Structure</h3>
   <ul>
-    <li><b>Selector</b> – identifies the HTML element.</li>
-    <li><b>Property</b> – the style attribute to change.</li>
-    <li><b>Value</b> – the setting applied to the property.</li>
+    <li><b>Selector</b> – the HTML element to style</li>
+    <li><b>Property</b> – the style attribute</li>
+    <li><b>Value</b> – the setting</li>
+    <li><b>Declaration</b> – property + value</li>
+    <li><b>Declaration Block</b> – declarations in curly braces</li>
   </ul>
-  <h3>Kinds of CSS</h3>
+  <h3>Style Sheet</h3>
+  <p>Instructions for the browser on how to display elements.</p>
+  <h3>Three Kinds of CSS</h3>
   <ul>
-    <li><b>External</b> – linked via <code>&lt;link&gt;</code> tag.</li>
-    <li><b>Embedded/Internal</b> – defined inside <code>&lt;style&gt;</code> in the head.</li>
-    <li><b>Inline</b> – defined directly in the element’s <code>style</code> attribute.</li>
+    <li><b>External</b> – separate .css file, linked with <link></li>
+    <li><b>Embedded/Internal</b> – defined inside <style> in the head</li>
+    <li><b>Inline</b> – defined in element's style attribute</li>
   </ul>
   `,
 
   // 2nd Quarter – Lesson 3
   `
   <h2>2nd Quarter – Lesson 3 (Inline, Internal, External CSS)</h2>
-  <p>CSS can be applied in three ways: inline, internal, and external.</p>
   <h3>Inline Style Sheets</h3>
-  <p>Defined directly in the element’s <code>style</code> attribute. Example: <code>&lt;p style="color:red;"&gt;</code>.</p>
+  <p>Defined directly in element's style attribute: <p style="color:red;"></p>
   <h3>Internal/Embedded Style Sheets</h3>
-  <p>Defined inside <code>&lt;style&gt;</code> in the head section. Applies to the whole document.</p>
+  <p>Defined inside <style> in the head section.</p>
   <h3>External Style Sheets</h3>
-  <p>Stored in a separate .css file and linked with <code>&lt;link&gt;</code>. Allows consistent styling across multiple pages.</p>
+  <p>Stored in separate .css file, linked with <link>.</p>
   <h3>Display Property</h3>
   <ul>
-    <li><b>block</b> – elements stack vertically.</li>
-    <li><b>inline</b> – elements flow horizontally.</li>
-    <li><b>none</b> – element is hidden.</li>
-    <li><b>list-item</b> – displays as a list item.</li>
+    <li><b>block</b> – elements stack vertically</li>
+    <li><b>inline</b> – elements flow horizontally</li>
+    <li><b>none</b> – element is hidden</li>
+    <li><b>list-item</b> – displays as list item</li>
+    <li><b>inherit</b> – inherits from parent</li>
   </ul>
   <h3>Div and Span Tags</h3>
-  <p><b>&lt;div&gt;</b> – block-level container for grouping content.<br><b>&lt;span&gt;</b> – inline container for styling parts of text.</p>
+  <p><b><div></b> – block-level container<br><b><span></b> – inline container</p>
   `,
 
   // 2nd Quarter – Lesson 4
   `
-  <h2>2nd Quarter – Lesson 4 (CSS Rules and Classes)</h2>
-  <p>A CSS rule has two parts: a selector and a declaration block. Classes are user-defined selectors applied to specific HTML elements.</p>
+  <h2>2nd Quarter – Lesson 4 (CSS Rules & Classes)</h2>
+  <h3>CSS Rule</h3>
+  <p>A CSS rule has two parts: a selector and declarations.</p>
+  <h3>Style Properties</h3>
+  <ul>
+    <li>Fonts</li>
+    <li>Colors/Backgrounds</li>
+    <li>Text formatting</li>
+    <li>Boxes/Layout</li>
+    <li>Lists</li>
+  </ul>
   <h3>Classes</h3>
   <ul>
-    <li>Defined with a dot (.) followed by the class name.</li>
-    <li>Reusable across multiple elements.</li>
-    <li>Can be combined with element selectors (e.g., <code>p.note</code>).</li>
+    <li>Defined with a dot (.) followed by class name</li>
+    <li>Reusable across multiple elements</li>
+    <li>Syntax: .classname or element.classname</li>
   </ul>
-  <h3>Examples</h3>
-  <ul>
-    <li><code>.highlight { background-color: yellow; }</code></li>
-    <li><code>p.note { color: blue; }</code></li>
-  </ul>
+  <h3>Grouping Selectors</h3>
+  <p>Apply same styles to multiple selectors separated by commas.</p>
   `,
 
-  // 2nd Quarter – Lesson 5
-  `
-  <h2>2nd Quarter – Lesson 5 (CSS Selectors)</h2>
-  <p>Selectors are used to target HTML elements for styling. There are six main types:</p>
-  <ul>
-    <li><b>Element Selector</b> – targets all instances of a tag (e.g., <code>p {}</code>).</li>
-    <li><b>ID Selector</b> – targets a unique element using <code>#id</code>.</li>
-    <li><b>Class Selector</b> – targets elements with a specific class using <code>.classname</code>.</li>
-    <li><b>Universal Selector</b> – targets all elements using <code>*</code>.</li>
-    <li><b>Group Selector</b> – applies styles to multiple selectors separated by commas.</li>
-    <li><b>Attribute Selector</b> – targets elements based on attributes (e.g., <code>input[type="text"]</code>).</li>
-  </ul>
-  `,
+  // ==================== QUARTER 3 - 4 LESSONS ====================
 
-  // 2nd Quarter – Lesson 6
-  `
-  <h2>2nd Quarter – Lesson 6 (CSS Dimensions and Pseudo-Classes)</h2>
-  <p>CSS can control dimensions and visibility of elements, as well as link behaviors using pseudo-classes.</p>
-  <h3>Dimension Properties</h3>
-  <ul>
-    <li><b>width</b> – sets element width.</li>
-    <li><b>height</b> – sets element height.</li>
-    <li><b>line-height</b> – sets line spacing.</li>
-    <li><b>max-height</b>, <b>min-height</b>, <b>max-width</b>, <b>min-width</b> – set limits.</li>
-    <li><b>visibility</b> – controls whether an element is visible, hidden, or collapsed.</li>
-  </ul>
-  <h3>Pseudo-Classes for Links</h3>
-  <ul>
-    <li><code>:link</code> – unvisited links.</li>
-    <li><code>:visited</code> – visited links.</li>
-    <li><code>:hover</code> – when mouse hovers.</li>
-    <li><code>:active</code> – when clicked.</li>
-    <li><code>:focus</code> – when focused.</li>
-  </ul>
-  <p>The order of pseudo-classes is important: LVHA (Link, Visited, Hover, Active).</p>
-  `,
-
-  // 3rd Quarter Lesson 1
+  // 3rd Quarter – Lesson 1
   `
   <h2>3rd Quarter – Lesson 1 (Typography & Text Properties)</h2>
   <p>Typography refers to the styling and arrangement of text on a web page using CSS. It ensures legibility, readability, and visual appeal.</p>
@@ -292,9 +333,6 @@ const lessons = [
     <li>text-align: Aligns text (left, right, center, justify).</li>
     <li>text-indent: Indents the first line of a block.</li>
     <li>color: Sets text color.</li>
-    <li>white-space: Controls how spaces are handled.</li>
-    <li>word-spacing: Spacing between words.</li>
-    <li>word-break: Defines how words break at line ends.</li>
     <li>text-decoration: Underline, overline, line-through.</li>
     <li>text-transform: Capitalize, uppercase, lowercase.</li>
     <li>text-shadow: Adds shadow to text.</li>
@@ -331,7 +369,7 @@ const lessons = [
   <p>Each element exists in its own box: margins, borders, padding, content.</p>
   <ul>
     <li>Control dimensions with height and width.</li>
-    <li>Use block-level tags (&lt;p&gt;, &lt;h1&gt;, &lt;div&gt;).</li>
+    <li>Use block-level tags (<p>, <h1>, <div>).</li>
   </ul>
   <h3>Element Positioning</h3>
   <ul>
@@ -339,10 +377,6 @@ const lessons = [
     <li>relative</li>
     <li>absolute</li>
     <li>fixed</li>
-  </ul>
-  <h3>Offset Properties</h3>
-  <ul>
-    <li>top, right, bottom, left</li>
   </ul>
   <h3>Float Property</h3>
   <ul>
@@ -355,7 +389,6 @@ const lessons = [
     <li>background-image</li>
     <li>background-repeat</li>
     <li>background-position</li>
-    <li>background-attachment</li>
   </ul>
   <h3>Margins</h3>
   <ul>
@@ -382,9 +415,11 @@ const lessons = [
   <ul>
     <li>Table Background: background-color property</li>
     <li>Table Style: highlight rows, banners, text alignment</li>
-    <li>Table Layout: use &lt;table&gt; to structure webpage content</li>
+    <li>Table Layout: use <table> to structure webpage content</li>
   </ul>
   `,
+
+  // ==================== QUARTER 4 - 6 LESSONS ====================
 
   // 4th Quarter Lesson 1
   `
@@ -402,7 +437,6 @@ const lessons = [
     <li>Works in all major browsers</li>
     <li>Developed by Brendan Eich</li>
     <li>Enhances webpages, builds games</li>
-    <li>Licensed by Oracle, used by Mozilla</li>
     <li>Client-side, high-level, interpreted, object-oriented</li>
     <li>Case-sensitive, semi-colons optional</li>
   </ul>
@@ -417,98 +451,137 @@ const lessons = [
 
   // 4th Quarter Lesson 2
   `
-  <h2>4th Quarter – Lesson 2 (Formatting Text & Borders with CSS)</h2>
-  <h3>Formatting Text</h3>
+  <h2>4th Quarter – Lesson 2 (JavaScript Variables & Data Types)</h2>
+  <h3>Variables</h3>
+  <p>Variables are containers for storing data values. In JavaScript, we use var, let, and const to declare variables.</p>
   <ul>
-    <li>Indenting text: text-indent</li>
-    <li>Changing text case: text-transform</li>
-    <li>Line spacing: line-height</li>
-    <li>Background color: background-color</li>
+    <li><b>var</b> – function-scoped, can be redeclared</li>
+    <li><b>let</b> – block-scoped, can be reassigned</li>
+    <li><b>const</b> – block-scoped, cannot be reassigned</li>
   </ul>
-  <h3>Borders</h3>
+  <h3>Data Types</h3>
   <ul>
-    <li>border-style: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden</li>
-    <li>border-width: thin, medium, thick, px, pt, cm, em</li>
-    <li>border-color: names, hex, RGB, HSL, transparent</li>
-    <li>Individual sides: border-top-width, border-right-width, border-bottom-width, border-left-width</li>
+    <li><b>Primitive Types:</b> String, Number, Boolean, Null, Undefined, Symbol</li>
+    <li><b>Reference Types:</b> Objects, Arrays, Functions</li>
   </ul>
-  <h3>Lists</h3>
+  <h3>Operators</h3>
   <ul>
-    <li>list-style-type: disc, circle, square, decimal, roman, alpha</li>
-    <li>list-style-image: custom bullet images</li>
-    <li>list-style-position: marker position</li>
-    <li>list-style: shorthand</li>
-  </ul>
-  <h3>Pseudo-elements</h3>
-  <ul>
-    <li>:link, :visited, :active, :hover, :focus</li>
-    <li>:first-letter, :first-line</li>
-    <li>:before, :after</li>
+    <li>Arithmetic: +, -, *, /, %, ++, --</li>
+    <li>Assignment: =, +=, -=, *=, /=</li>
+    <li>Comparison: ==, ===, !=, !==, >, <, >=, <=</li>
+    <li>Logical: &&, ||, !</li>
   </ul>
   `,
 
   // 4th Quarter Lesson 3
   `
-  <h2>4th Quarter – Lesson 3 (Formatting Layout with CSS)</h2>
-  <h3>Box Model</h3>
-  <p>Each element exists in its own box: margins, borders, padding, content.</p>
+  <h2>4th Quarter – Lesson 3 (JavaScript Functions & Events)</h2>
+  <h3>Functions</h3>
+  <p>A function is a block of code designed to perform a particular task.</p>
+  <h3>Function Declaration</h3>
   <ul>
-    <li>Control dimensions with height and width.</li>
-    <li>Use block-level tags (&lt;p&gt;, &lt;h1&gt;, &lt;div&gt;).</li>
+    <li><code>function functionName(parameter) { // code }</code></li>
+    <li>Functions can return values using the <b>return</b> keyword</li>
   </ul>
-  <h3>Element Positioning</h3>
+  <h3>Arrow Functions</h3>
   <ul>
-    <li>static</li>
-    <li>relative</li>
-    <li>absolute</li>
-    <li>fixed</li>
+    <li><code>const functionName = (parameter) => { // code }</code></li>
+    <li>Shorter syntax for writing function expressions</li>
   </ul>
-  <h3>Offset Properties</h3>
+  <h3>JavaScript Events</h3>
+  <p>Events are actions that happen in the browser (clicks, hovers, keypresses).</p>
   <ul>
-    <li>top, right, bottom, left</li>
+    <li><b>onclick</b> – when an element is clicked</li>
+    <li><b>onmouseover</b> – when mouse hovers over element</li>
+    <li><b>onkeydown</b> – when a key is pressed</li>
+    <li><b>onsubmit</b> – when a form is submitted</li>
   </ul>
-  <h3>Float Property</h3>
-  <ul>
-    <li>float: left, right, none</li>
-    <li>Used for wrapping text around images</li>
-  </ul>
-  <h3>Background Properties</h3>
-  <ul>
-    <li>background-color</li>
-    <li>background-image</li>
-    <li>background-repeat</li>
-    <li>background-position</li>
-    <li>background-attachment</li>
-  </ul>
-  <h3>Margins</h3>
-  <ul>
-    <li>margin-top, margin-bottom, margin-left, margin-right</li>
-    <li>Shorthand: margin: top right bottom left;</li>
-    <li>Negative margins can be used for special effects</li>
-  </ul>
+  <h3>addEventListener</h3>
+  <p><code>element.addEventListener('event', function)</code> - attaches an event handler to an element.</p>
   `,
 
   // 4th Quarter Lesson 4
   `
-  <h2>4th Quarter – Lesson 4 (Formatting Borders & Tables)</h2>
-  <h3>Borders</h3>
+  <h2>4th Quarter – Lesson 4 (JavaScript DOM & DOM Manipulation)</h2>
+  <h3>DOM (Document Object Model)</h3>
+  <p>The DOM is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+  <h3>Selecting Elements</h3>
   <ul>
-    <li>border-width: thin, medium, thick, px, em</li>
-    <li>border-color: names, hex, RGB</li>
-    <li>border-style: hidden, dotted, dashed, solid, double, groove, ridge, inset, outset</li>
+    <li><code>document.getElementById('id')</code> – selects by ID</li>
+    <li><code>document.getElementsByClassName('class')</code> – selects by class</li>
+    <li><code>document.getElementsByTagName('tag')</code> – selects by tag</li>
+    <li><code>document.querySelector('selector')</code> – selects first match</li>
+    <li><code>document.querySelectorAll('selector')</code> – selects all matches</li>
   </ul>
-  <h3>Padding</h3>
+  <h3>Modifying Elements</h3>
   <ul>
-    <li>padding-top, padding-bottom, padding-left, padding-right</li>
-    <li>Shorthand: padding: top right bottom left</li>
-    <li>Default padding value is 0</li>
+    <li><code>element.innerHTML</code> – changes HTML content</li>
+    <li><code>element.textContent</code> – changes text content</li>
+    <li><code>element.setAttribute('attr', 'value')</code> – sets attribute</li>
+    <li><code>element.style.property</code> – changes CSS style</li>
   </ul>
-  <h3>Tables</h3>
+  `,
+
+  // 4th Quarter Lesson 5
+  `
+  <h2>4th Quarter – Lesson 5 (JavaScript Conditional Statements & Loops)</h2>
+  <h3>Conditional Statements</h3>
   <ul>
-    <li>Table Background: background-color property</li>
-    <li>Table Style: highlight rows, banners, text alignment</li>
-    <li>Table Layout: use &lt;table&gt; to structure webpage content</li>
-    <li>Example: headers, links, content cells, quotes inside table rows</li>
+    <li><b>if</b> – executes code if condition is true</li>
+    <li><b>else</b> – executes code if condition is false</li>
+    <li><b>else if</b> – tests a new condition</li>
+    <li><b>switch</b> – selects from multiple conditions</li>
+  </ul>
+  <h3>Comparison Operators</h3>
+  <ul>
+    <li>== equal to</li>
+    <li>=== equal value and type</li>
+    <li>!= not equal</li>
+    <li>> greater than</li>
+    <li>< less than</li>
+    <li>>= greater than or equal</li>
+    <li><= less than or equal</li>
+  </ul>
+  <h3>Loops</h3>
+  <ul>
+    <li><b>for</b> – loops through a block of code a number of times</li>
+    <li><b>while</b> – loops through a block while condition is true</li>
+    <li><b>do...while</b> – loops at least once, then repeats</li>
+    <li><b>for...of</b> – loops through iterable objects</li>
+  </ul>
+  `,
+
+  // 4th Quarter Lesson 6
+  `
+  <h2>4th Quarter – Lesson 6 (JavaScript Arrays & Objects)</h2>
+  <h3>Arrays</h3>
+  <p>Arrays are used to store multiple values in a single variable.</p>
+  <h3>Creating Arrays</h3>
+  <ul>
+    <li><code>const fruits = ["apple", "banana", "orange"];</code></li>
+    <li><code>const numbers = new Array(1, 2, 3);</code></li>
+  </ul>
+  <h3>Array Methods</h3>
+  <ul>
+    <li><b>push()</b> – adds element to end</li>
+    <li><b>pop()</b> – removes element from end</li>
+    <li><b>shift()</b> – removes element from beginning</li>
+    <li><b>unshift()</b> – adds element to beginning</li>
+    <li><b>length</b> – returns number of elements</li>
+    <li><b>sort()</b> – sorts elements</li>
+    <li><b>reverse()</b> – reverses elements</li>
+  </ul>
+  <h3>Objects</h3>
+  <p>Objects are used to store keyed collections of various data.</p>
+  <h3>Creating Objects</h3>
+  <ul>
+    <li><code>const person = {name: "John", age: 30};</code></li>
+    <li><code>const person = new Object();</code></li>
+  </ul>
+  <h3>Accessing Object Properties</h3>
+  <ul>
+    <li><code>object.property</code></li>
+    <li><code>object["property"]</code></li>
   </ul>
   `
 ];
@@ -517,16 +590,12 @@ let lessonIndex = 0;
 
 function showLesson(index) {
   const contentBox = document.getElementById("lessonContent");
-  contentBox.innerHTML = lessons[index];  // <-- innerHTML ensures tags render properly
+  contentBox.innerHTML = lessons[index];
 }
-
-
-
-
 
     // Events (one image + title per event)
     const events = [
-        { title: "Intrams", img: "images/intrams.png" },
+        { title: "Intrams", img: "images/intrams.jpg" },
         { title: "Science Month", img: "images/science_month.png" },
         { title: "AP Month", img: "images/ap_month.png" },
 
@@ -538,6 +607,10 @@ function showLesson(index) {
         { title: "Noli Me Tangere", img: "images/noli_me_tangere.png" },
         { title: "Ped Xing", img: "images/ped_xing.png" },
 
+        { title: "Buwan ng Wika", img: "images/BW1.jpg" },
+        { title: "Cluster", img: "images/cluster1.jpg" },
+        { title: "Mapeh Month", img: "images/mapeh-month.png" },
+
         {
             title: "Credits",
             img: "images/credits.png",
@@ -548,7 +621,6 @@ function showLesson(index) {
     let eventIndex = 0;
 
     // Handle character selection (if dialogue elements exist)
-    // Handle character selection
     if (dialogueBox && dialogueContent && nextBtn) {
         document.querySelectorAll("input[name='character']").forEach(radio => {
             radio.addEventListener("change", () => {
@@ -598,12 +670,10 @@ function showLesson(index) {
                                 <img src="images/gallery5.png" alt="Gallery 5">
                                 <img src="images/gallery6.png" alt="Gallery 6">
                             </div>
-                        </div>
                         <div class="gallery-side">
                             <img src="images/char-right.png" alt="Right Character">
-                        </div>
-                    </div>`;
-                    nextBtn.onclick = null; // no next for gallery
+                        </div>`;
+                    nextBtn.onclick = null;
                 } else if (radio.value === "video") {
                     dialogueName.textContent = "Video";
                     dialogueContent.innerHTML = `
@@ -614,20 +684,20 @@ function showLesson(index) {
                                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
                             </iframe>
                         </div>
-                    </div>
                     <div class="video-reflection">
                         <h3>Reflection</h3>
                         <p>As Padre Damaso and the main scriptwriter of Noli Me Tangere, I contributed to the play by doing my 
                         part and oftentimes assisting with the props members and keeping them company.</p>
                         <p> I was very satisfied with how the play turned out and I am grateful that I was able to play such a big part in it. </p>
                     </div>`;
-                    nextBtn.onclick = null; // no next for video
+                    nextBtn.onclick = null;
                 }
             });
         });
     }
 
 })
+
 // Functions for AP.html lesson buttons
 function showapLesson(num) {
     const aplessonInfo = document.getElementById("lesson-info");
@@ -638,246 +708,206 @@ function showapLesson(num) {
     const apLessons = [
         {
             info: `
-                <h2>Lesson 1: Mga Konsepto ng Pambansang Kaunlaran</h2>
-                <p>Ang pambansang kaunlaran ay tumutukoy sa kabuuang pagtaas ng antas ng pamumuhay ng mamamayan. 
-                Kasama rito ang mga konsepto ng <b>pagbabago</b>, <b>pag-unlad</b>, <b>pagsulong</b>, at <b>ebolusyon</b>.</p>
+                <h2>Lesson 1: Pambansang Kaunlaran</h2>
+                <p>Isang estado ng bansa kung saan tinatamasa ng mga tao mula sa pinakamababang uri ng mamamayan ang nakakamanghang pagbabago sa ekonomiya at pamumuhay.</p>
+                <h3>MGA KONSEPTO NG PAMBANSANG KAUNLARAN</h3>
                 <ul>
-                    <li><b>Pagbabago</b> – proseso ng pag-iiba sa lipunan at ekonomiya.</li>
-                    <li><b>Pag-unlad</b> – progresibong pagtaas ng antas ng pamumuhay.</li>
-                    <li><b>Pagsulong</b> – patuloy na pag-usad tungo sa layunin.</li>
-                    <li><b>Ebolusyon</b> – pagbabago sa loob ng mahabang panahon.</li>
+                    <li><b>Pagbabago</b> – Paraan upang maging iba o naiiba.</li>
+                    <li><b>Pag-unlad</b> – Pagbabago mula sa mababa tungo sa mataas na antas ng pamumuhay.</li>
+                    <li><b>Pagsulong</b> – Pag-usad tungo sa iyong layunin.</li>
+                    <li><b>Ebolusyon</b> – Pagbabago sa mga katangian sa loob ng mahabang panahon.</li>
                 </ul>
-                <p>Ang pambansang kaunlaran ay nakikita sa pagtaas ng kalidad ng buhay ng mamamayan, mula sa pinakamababang uri hanggang sa pinakamataas.</p>
-            `,
-            reflection: "Sa araling ito, natutunan ko na ang kaunlaran ay hindi lamang tungkol sa ekonomiya kundi pati na rin sa kalidad ng buhay ng bawat mamamayan. Ang tunay na pag-unlad ay nakikita kapag ang lahat ay nakikinabang, hindi lamang ang iilang sektor."
-        },
-        {
-            info: `
-                <h2>Lesson 2: Dalawang Konsepto ng Pag-unlad</h2>
-                <p>Ayon kina Todaro at Smith (2012), may dalawang pananaw ng pag-unlad:</p>
+                <h3>DALAWANG KONSEPTO NG PAG-UNLAD</h3>
                 <ul>
-                    <li><b>Tradisyunal na Konsepto</b> – nakatuon sa patuloy na pagtaas ng income per capita.</li>
-                    <li><b>Makabagong Konsepto</b> – nakatuon sa malawakang pagbabago sa buong sistemang panlipunan.</li>
+                    <li><b>Tradisyunal</b> – Pagtamo ng patuloy na pagtaas ng income per capita.</li>
+                    <li><b>Makabago</b> – Malawakang pagbabago sa buong sistemang panlipunan.</li>
                 </ul>
-                <p>Ang tradisyunal ay nakikita sa ekonomiya, samantalang ang makabago ay nakikita sa kabuuang pagbabago ng lipunan.</p>
-            `,
-            reflection: "Naisip ko na mahalaga ang parehong pananaw. Ang ekonomiya ay pundasyon, ngunit kung walang pagbabago sa lipunan, hindi magiging makabuluhan ang pagtaas ng kita. Ang pag-unlad ay dapat makita sa lahat ng aspeto ng pamumuhay."
-        },
-        {
-            info: `
-                <h2>Lesson 3: Mga Salik at Palatandaan ng Pag-unlad</h2>
-                <p>Ang mga salik na nakakatulong sa pagsulong ng ekonomiya ay:</p>
+                <h3>MGA SALIK NG KAUNLARAN</h3>
                 <ul>
                     <li>Likas na yaman</li>
                     <li>Yamang-tao</li>
                     <li>Kapital</li>
-                    <li>Teknolohiya</li>
+                    <li>Teknolohiya at Inobasyon</li>
                 </ul>
-                <p>Ang mga palatandaan ng pag-unlad ay:</p>
+                <h3>MGA TUNGKULIN NG MAMAMAYAN</h3>
                 <ul>
-                    <li>Makatarungan at dinamikong kaayusan ng lipunan</li>
-                    <li>Kasaganaan</li>
-                    <li>Kalayaan mula sa kahirapan</li>
-                    <li>Sapat na lingkurang panlipunan</li>
-                    <li>Katarungang panlipunan</li>
+                    <li>Suportahan ang pamahalaan</li>
+                    <li>Sundin ang batas</li>
+                    <li>Alagaan ang kapaligiran</li>
+                    <li>Tumulong sa pagpuksa ng korapsyon</li>
+                    <li>Maging produktibo</li>
+                    <li>Tangkilikin ang produktong Pilipino</li>
+                    <li>Magtipid ng enerhiya</li>
                 </ul>
             `,
-            reflection: "Napagtanto ko na ang kaunlaran ay hindi lamang nakikita sa mga gusali o imprastruktura kundi sa kung paano natutugunan ang pangangailangan ng tao. Ang pagkakaroon ng katarungan at pantay na oportunidad ay tunay na palatandaan ng pag-unlad."
+            reflection: "Natutunan ko na ang tunay na kaunlaran ay nakikita sa pagbabago ng buhay ng mga tao, hindi lamang sa ekonomiya kundi sa kabuuan ng lipunan."
         },
         {
             info: `
-                <h2>Lesson 4: Antas ng Kaunlaran ng Bansa</h2>
-                <p>May tatlong antas ng kaunlaran:</p>
+                <h2>Lesson 2: Agrikultura</h2>
+                <p>Isang agham at sining na may kinalaman sa pagpaparami ng mga hayop at mga tanim o halaman.</p>
+                <h3>MGA GAWAIN SA SEKTOR NG AGRIKULTURA</h3>
                 <ul>
-                    <li><b>Maunlad na Bansa (Developed Economies)</b> – may mataas na GDP at HDI.</li>
-                    <li><b>Umuunlad na Bansa (Developing Economies)</b> – may industriyang pinauunlad ngunit mababa pa ang antas ng industriyalisasyon.</li>
-                    <li><b>Papaunlad na Bansa (Underdeveloped Economies)</b> – kulang sa industriyalisasyon at mababa ang antas ng agrikultura at pamumuhay.</li>
+                    <li><b>Pagsasaka</b> – Pangunahing pananim: palay, mais, niyog, tubo, saging, pinya, atbp.</li>
+                    <li><b>Pangingisda</b> – Nauuri sa tatlo: komersiyal, munisipal, at aquaculture</li>
+                    <li><b>Paghahayupan</b> – May kinalaman sa mga hayop na itinaas para sa karne, hibla, gatas, itlog, atbp.</li>
+                    <li><b>Paggugubat/Pagtotroso</b> – Paglinang ng kagubatan</li>
+                </ul>
+                <h3>KAHALAGAHAN NG AGRIKULTURA</h3>
+                <ul>
+                    <li>Pinagmumulan ng pagkain</li>
+                    <li>Pinagkukunan ng hilaw na materyales</li>
+                    <li>Nagkakaloob ng trabaho sa maraming Pilipino</li>
+                    <li>Nagpapasok ng dolyar sa bansa</li>
+                </ul>
+                <h3>SULIRANIN NG AGRIKULTURA</h3>
+                <ul>
+                    <li>Pagliit ng lupang sakahan</li>
+                    <li>Kakulangan ng makabagong teknolohiya</li>
+                    <li>Climate Change</li>
+                    <li>Mapanirang operasyon ng malalaking komersiyal na mangingisda</li>
                 </ul>
             `,
-            reflection: "Sa araling ito, naunawaan ko kung nasaan ang Pilipinas sa antas ng kaunlaran. Mahalaga na kilalanin natin ang ating kalagayan upang makagawa ng tamang hakbang tungo sa pag-unlad."
+            reflection: "Napagtanto ko na ang agrikultura ang pundasyon ng ating ekonomiya. Kung hindi natin ito mapapangalagaan, maaapektuhan ang buong bansa."
         },
         {
             info: `
-                <h2>Lesson 5: Mga Tungkulin at Gampanin ng Mamamayan</h2>
-                <p>Mga tungkulin ng mamamayan:</p>
+                <h2>Lesson 3: Industriya</h2>
+                <p>Tumutukoy sa pagproseso ng mga hilaw na materyal at paggawa ng mga produkto na kinakailangan para sa pampublikong pamilihan.</p>
+                <h3>SUB-SEKTOR NG INDUSTRIYA</h3>
                 <ul>
-                    <li>Pagsuporta sa pamahalaan</li>
-                    <li>Pagsunod sa batas</li>
-                    <li>Pangangalaga sa kapaligiran</li>
-                    <li>Pagtulong sa pagpuksa ng korapsyon</li>
-                    <li>Pagiging produktibo</li>
-                    <li>Pagtangkilik sa produktong Pilipino</li>
-                    <li>Pagtitipid ng enerhiya</li>
+                    <li><b>Pagmimina</b> – Pagkuha at pagproseso ng mga yamang mineral</li>
+                    <li><b>Pagmamanupaktura</b> – Paggawa ng mga produkto sa pamamagitan ng manual labor o ng mga makina</li>
+                    <li><b>Konstruksyon</b> – Pagtatayo ng mga gusali, estruktura, at iba pang land improvements</li>
+                    <li><b>Utilities</b> – Pagtugon ng mga pangunahing pangangailangan tulad ng tubig, kuryente, at gas</li>
                 </ul>
-                <p>Mga gampanin ng mamamayan:</p>
+                <h3>KAHALAGAHAN NG INDUSTRIYA</h3>
                 <ul>
-                    <li>Pagbabayad ng buwis</li>
-                    <li>Tamang pagboto</li>
-                    <li>Pagnenegosyo</li>
-                    <li>Pakikilahok sa pamamahala</li>
-                    <li>Pagtangkilik sa sariling produkto</li>
+                    <li>Tumatanggap ng mga produkto mula sa sektor ng agrikultura</li>
+                    <li>Nagkakaloob ng hanapbuhay sa maraming Pilipino</li>
+                    <li>Nagpapasok ng dolyar sa bansa</li>
+                    <li>Nakagagamit ng makabagong teknolohiya</li>
+                </ul>
+                <h3>SULIRANIN NG INDUSTRIYA</h3>
+                <ul>
+                    <li>Kakulangan sa pondo at kompetisyon</li>
+                    <li>Paghina ng lokal na industriya</li>
                 </ul>
             `,
-            reflection: "Naisip ko na ang kaunlaran ay hindi lamang nakasalalay sa pamahalaan kundi sa bawat mamamayan. Ang simpleng pagtangkilik sa produktong Pilipino ay malaking ambag sa ekonomiya."
+            reflection: "Ang industriya ang nagbibigay ng modernisasyon sa bansa. Ngunit dapat din natin sinusuportahan ang lokal na industriya upang hindi tayo masyado umasa sa mga imported na produkto."
         },
-    {
-        info: `
-            <h2>Lesson 6: Agrikultura</h2>
-            <p>Ang agrikultura ay agham at sining ng pagpaparami ng hayop at halaman. 
-            Kabilang dito ang pagsasaka, pangingisda, paghahayupan, at paggugubat.</p>
-            <p>Mahalaga ang agrikultura dahil:</p>
-            <ul>
-                <li>Pinagmumulan ng pagkain ng bansa</li>
-                <li>Pinagmumulan ng hilaw na materyales para sa industriya</li>
-                <li>Nagbibigay ng trabaho sa malaking bahagi ng populasyon</li>
-                <li>Pinagmumulan ng dolyar mula sa eksport ng produkto</li>
-            </ul>
-            <p>Mga suliranin sa agrikultura:</p>
-            <ul>
-                <li>Pagliit ng lupang sakahan dahil sa urbanisasyon</li>
-                <li>Kakulangan ng pasilidad at makabagong teknolohiya</li>
-                <li>Climate change at matinding kalamidad</li>
-                <li>Polusyon at peste</li>
-                <li>Pagkaubos ng kagubatan</li>
-            </ul>
-        `,
-        reflection: "Naisip ko na ang agrikultura ang pundasyon ng ekonomiya. Kung hindi ito mapapangalagaan, maaapektuhan ang lahat ng sektor. Mahalaga ang suporta ng pamahalaan at mamamayan sa mga magsasaka at mangingisda."
-    },
-    {
-        info: `
-            <h2>Lesson 7: Industriya</h2>
-            <p>Ang industriya ay tumutukoy sa sektor ng ekonomiya na nakatuon sa pagproseso ng hilaw na materyales at paggawa ng mga produkto. 
-            Kabilang dito ang:</p>
-            <ul>
-                <li>Pagmimina – pagkuha ng mineral at yamang likas mula sa lupa.</li>
-                <li>Pagmamanupaktura – paggawa ng mga produkto mula sa hilaw na materyales.</li>
-                <li>Konstruksyon – pagtatayo ng mga gusali, daan, tulay, at iba pang imprastruktura.</li>
-                <li>Utilities – kuryente, tubig, at iba pang serbisyong pangkomunidad.</li>
-            </ul>
-            <p>Mahalaga ang industriya dahil:</p>
-            <ul>
-                <li>Nagbibigay ng trabaho sa mamamayan.</li>
-                <li>Nagpapalaganap ng teknolohiya at modernisasyon.</li>
-                <li>Nagpapasok ng dolyar mula sa eksport ng produkto.</li>
-            </ul>
-            <p>Mga suliranin:</p>
-            <ul>
-                <li>Kakulangan sa pondo at kapital.</li>
-                <li>Matinding kompetisyon mula sa dayuhang produkto.</li>
-                <li>Paghina ng lokal na industriya.</li>
-            </ul>
-        `,
-        reflection: "Naisip ko na ang industriya ang nagbibigay ng modernisasyon sa bansa. Ngunit kung hindi susuportahan ang lokal na industriya, mas lalo tayong aasa sa ibang bansa."
-    },
-
-    {
-        info: `
-            <h2>Lesson 8: Sektor ng Paglilingkod</h2>
-            <p>Ang sektor ng paglilingkod ay umaalalay sa produksyon, distribusyon, kalakalan, at pagkonsumo ng produkto. 
-            Kabilang dito ang:</p>
-            <ul>
-                <li>Transportasyon</li>
-                <li>Komunikasyon</li>
-                <li>Pananalapi</li>
-                <li>Real Estate</li>
-                <li>Paglilingkod ng pribado at pampubliko</li>
-            </ul>
-            <p>Mga ahensya na nakapaloob sa sektor:</p>
-            <ul>
-                <li>DOLE – Department of Labor and Employment</li>
-                <li>OWWA – Overseas Workers Welfare Administration</li>
-                <li>POEA – Philippine Overseas Employment Administration</li>
-                <li>TESDA – Technical Education and Skills Development Authority</li>
-                <li>PRC – Professional Regulation Commission</li>
-                <li>CHED – Commission on Higher Education</li>
-            </ul>
-            <p>Mga batas na nagbibigay proteksyon sa manggagawa:</p>
-            <ul>
-                <li>Holiday Pay</li>
-                <li>Overtime Pay</li>
-                <li>Night Shift Differential</li>
-                <li>13th Month Pay</li>
-            </ul>
-        `,
-        reflection: "Naisip ko na ang sektor ng paglilingkod ang nagbibigay ng balanse sa ekonomiya. Ang mga serbisyong ito ang direktang nakakaapekto sa buhay ng tao."
-    },
-
-    {
-        info: `
-            <h2>Lesson 9: Impormal na Sektor</h2>
-            <p>Ang impormal na sektor ay bahagi ng ekonomiya na walang pormal na dokumento o rehistro. 
-            Kabilang dito ang mga:</p>
-            <ul>
-                <li>Nagtitinda sa kalsada</li>
-                <li>Pedicab driver</li>
-                <li>Karpintero</li>
-                <li>Mga maliliit na negosyong walang rehistro</li>
-            </ul>
-            <p>Mahalaga ito dahil nagbibigay ng hanapbuhay sa mga walang regular na trabaho.</p>
-            <p>Mga batas at programang sumusuporta:</p>
-            <ul>
-                <li>RA 8425 – Social Reform and Poverty Alleviation Act</li>
-                <li>RA 9710 – Magna Carta of Women</li>
-                <li>RA 7796 – TESDA Act</li>
-                <li>RA 8282 – Social Security Act</li>
-                <li>RA 7875 – National Health Insurance Act</li>
-                <li>4Ps – Pantawid Pamilyang Pilipino Program</li>
-            </ul>
-        `,
-        reflection: "Naisip ko na ang impormal na sektor ay mahalaga dahil ito ang sumasalo sa mga mamamayang walang oportunidad sa pormal na trabaho. Dapat itong kilalanin at suportahan."
-    },
-
-    {
-        info: `
-            <h2>Lesson 10: Kalakalang Panlabas</h2>
-            <p>Ang kalakalang panlabas ay tumutukoy sa palitan ng produkto at serbisyo sa pagitan ng mga bansa.</p>
-            <h3>Uri ng Kalakalan</h3>
-            <ul>
-                <li><b>Bilateral Trade</b> – palitan ng produkto sa pagitan ng dalawang bansa.</li>
-                <li><b>Bloc Trade</b> – palitan ng produkto sa pagitan ng maraming bansa na bumubuo ng isang samahan.</li>
-            </ul>
-            <h3>Mga Dahilan ng Kalakalang Panlabas</h3>
-            <ul>
-                <li>Pagkakaiba sa teknolohiya</li>
-                <li>Pagkakaiba sa likas na yaman</li>
-                <li>Pagkakaiba sa panlasa ng mamimili</li>
-                <li>Pagkakaiba sa kakayahan ng produksyon</li>
-            </ul>
-            <h3>Mga Patakaran</h3>
-            <ul>
-                <li>Taripa – buwis sa inaangkat na produkto</li>
-                <li>Kota – limitasyon sa dami ng inaangkat</li>
-                <li>Subsidy – tulong ng pamahalaan sa lokal na industriya</li>
-            </ul>
-            <h3>Mga Organisasyon</h3>
-            <ul>
-                <li>World Trade Organization (WTO)</li>
-                <li>Asia-Pacific Economic Cooperation (APEC)</li>
-                <li>Association of Southeast Asian Nations (ASEAN)</li>
-            </ul>
-            <h3>Kabutihan ng Kalakalang Panlabas</h3>
-            <ul>
-                <li>Mas maraming produkto ang mapipili ng mamimili</li>
-                <li>Mas mataas ang kalidad ng produkto</li>
-                <li>Lumalawak ang pamilihan ng lokal na produkto</li>
-            </ul>
-            <h3>Di-Kabutihan ng Kalakalang Panlabas</h3>
-            <ul>
-                <li>Pagiging palaasa sa imported na produkto</li>
-                <li>Pagkawala ng sariling pagkakakilanlan ng bansa</li>
-            </ul>
-        `,
-        reflection: "Naisip ko na ang kalakalang panlabas ay mahalaga sa ekonomiya, ngunit dapat balansehin upang hindi mawala ang sariling identidad ng bansa."
-    }
-];
+        {
+            info: `
+                <h2>Lesson 4: Sektor ng Paglilingkod</h2>
+                <p>Ang umaalalay sa buong yugto ng produksyon, distribusyon, kalakalan, at pagkonsumo ng mga produkto.</p>
+                <h3>PORMAL NA SEKTOR SA ILALIM NG PAGLILINGKOD</h3>
+                <ul>
+                    <li>Transportasyon, komunikasyon, at mga imbakan</li>
+                    <li>Kalakalan – Pagpapalitan ng iba't-ibang produkto at serbisyo</li>
+                    <li>Pananalapi – Mga serbisyong may kinalaman sa bangko, insurance, at pamumuhunan</li>
+                    <li>Paupahang bahay at Real Estate</li>
+                    <li>Paglilingkod ng Pampribado at Pampubliko</li>
+                </ul>
+                <h3>MGA AHENSIYANG TUMUTULONG</h3>
+                <ul>
+                    <li>DOLE – Department of Labor and Employment</li>
+                    <li>OWWA – Overseas Workers Welfare Administration</li>
+                    <li>POEA – Philippine Overseas Employment Administration</li>
+                    <li>TESDA – Technical Education and Skills Development Authority</li>
+                    <li>PRC – Professional Regulation Commission</li>
+                    <li>CHED – Commission on Higher Education</li>
+                </ul>
+                <h3>MGA BATAS SA PAGGawa</h3>
+                <ul>
+                    <li>Holiday Pay</li>
+                    <li>Overtime Pay</li>
+                    <li>Night Shift Differential</li>
+                    <li>13th Month Pay</li>
+                    <li>Maternity/Paternity Leave</li>
+                </ul>
+            `,
+            reflection: "Ang sektor ng paglilingkod ang nagbibigay ng balanse sa ekonomiya. Ang mga serbisyong ito ang direktang nakakaapekto sa araw-araw na buhay ng bawat Pilipino."
+        },
+        {
+            info: `
+                <h2>Lesson 5: Impormal na Sektor</h2>
+                <p>Sektor ng ekonomiya na walang pormal o salat sa mga dokumentong kailangan sa pagsasagawa ng gawaing pang-ekonomiya.</p>
+                <h3>HALIMBAWA NG MGA TAONG KABILANG SA SEKTOR NA ITO</h3>
+                <ul>
+                    <li>Nagtitinda sa kalsada</li>
+                    <li>Pedicab driver</li>
+                    <li>Karpintero</li>
+                    <li>Hindi rehistradong pampublikong sasakyan</li>
+                </ul>
+                <h3>KATANGIAN NG IMPORMAL NA SEKTOR</h3>
+                <ul>
+                    <li>Hindi nakarehistro sa pamahalaan</li>
+                    <li>Hindi nagbabayad ng buwis mula sa kinita</li>
+                    <li>Walang legal at pormal na balangkas mula sa pamahalaan</li>
+                </ul>
+                <h3>KAHALAGAHAN NG IMPORMAL NA SEKTOR</h3>
+                <ul>
+                    <li>Sinasalo nito ang mga mamamayan na hindi makapasok bilang regular na empleyado</li>
+                    <li>Nagbibigay ng pagkakataon sa maraming Pilipino na makapaghanapbuhay</li>
+                    <li>Nagsisilbing tagasalo ng mga mamamayang may mahigpit na pangangailangan</li>
+                    <li>Malaki ang naitutulong sa mga konsyumer dahil sa mura nitong halaga</li>
+                </ul>
+                <h3>MGA BATAS AT PROGRAMA</h3>
+                <ul>
+                    <li>Social Reform and Poverty Alleviation Act (R.A 8425)</li>
+                    <li>Magna Carta of Women (R.A 9710)</li>
+                    <li>Technical Education and Skills Development Act (R.A 7796)</li>
+                    <li>Social Security Act (R.A 8282)</li>
+                    <li>National Health Insurance Act (R.A 7875)</li>
+                    <li>4Ps – Pantawid Pamilyang Pilipino Program</li>
+                </ul>
+            `,
+            reflection: "Napagtanto ko na ang impormal na sektor ay mahalaga dahil ito ang sumasalo sa mga mamamayang walang oportunidad sa pormal na trabaho. Dapat itong kilalanin at suportahan."
+        },
+        {
+            info: `
+                <h2>Lesson 6: Patakarang Panlabas (Kalakalang Panlabas)</h2>
+                <p>Palitan ng produkto at serbisyo sa pagitan ng mga bansa.</p>
+                <h3>URI NG KALAKALAN</h3>
+                <ul>
+                    <li><b>Bilateral</b> – Palitan ng produkto sa pagitan ng dalawang bansa</li>
+                    <li><b>Bloc</b> – Palitan ng produkto sa pagitan ng organisasyon at isang bansa</li>
+                </ul>
+                <h3>EKSPORT AT IMPORT</h3>
+                <ul>
+                    <li><b>EKSPORT</b> – Pagpapadala ng mga produkto at serbisyo sa ibang bansa</li>
+                    <li><b>IMPORT</b> – Pagbili ng kalakal mula sa ibang bansa</li>
+                </ul>
+                <h3>DAHILAN NG KALAKALANG PANLABAS</h3>
+                <ul>
+                    <li>Pagkakaiba ng Teknolohiya</li>
+                    <li>Pagkakaiba sa Pinagkukunang Yaman</li>
+                    <li>Pagkakaiba sa Panlasa</li>
+                    <li>Pagkakaiba sa Halaga ng Produksyon</li>
+                </ul>
+                <h3>PATAKARANG PANG-EKONOMIYA</h3>
+                <ul>
+                    <li><b>Taripa/Tariff</b> – Buwis sa mga produktong inaangkat</li>
+                    <li><b>Kota/Quota</b> – Limitasyon sa dami ng inaangkat na produkto</li>
+                    <li><b>Subsidy</b> – Tulong ng gobyerno sa lokal na industriya</li>
+                </ul>
+                <h3>SAMAHANG PANDAIGDIG</h3>
+                <ul>
+                    <li><b>WTO</b> – World Trade Organization</li>
+                    <li><b>APEC</b> – Asia-Pacific Economic Cooperation</li>
+                    <li><b>ASEAN</b> – Association of Southeast Asian Nations</li>
+                </ul>
+            `,
+            reflection: "Naisip ko na ang kalakalang panlabas ay mahalaga sa ekonomiya, ngunit dapat balansehin upang hindi mawala ang sariling identidad ng bansa."
+        }
+    ];
 
     const index = num - 1;
     if (index >= 0 && index < apLessons.length) {
-        aplessonInfo.innerHTML = apLessons[index].info;        // use innerHTML so formatting renders
+        aplessonInfo.innerHTML = apLessons[index].info;
         aplessonReflection.innerHTML = `<p>${apLessons[index].reflection}</p>`;
     } else {
         aplessonInfo.textContent = "Lesson not found.";
         aplessonReflection.textContent = "No reflection available.";
     }
 };
-
