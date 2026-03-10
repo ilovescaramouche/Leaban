@@ -595,26 +595,71 @@ function showLesson(index) {
 
     // Events (one image + title per event)
     const events = [
-        { title: "Intrams", img: "images/intrams.jpg" },
-        { title: "Science Month", img: "images/science_month.png" },
-        { title: "AP Month", img: "images/ap_month.png" },
-
-        { title: "Booklandia", img: "images/booklandia.png" },
-        { title: "Values Pop", img: "images/values_pop.png" },
-        { title: "Math Month", img: "images/math_month.png" },
-
-        { title: "Botb", img: "images/botb.png" },
-        { title: "Noli Me Tangere", img: "images/noli_me_tangere.png" },
-        { title: "Ped Xing", img: "images/ped_xing.png" },
-
-        { title: "Buwan ng Wika", img: "images/BW1.jpg" },
-        { title: "Cluster", img: "images/cluster1.jpg" },
-        { title: "Mapeh Month", img: "images/mapeh-month.png" },
-
+        { 
+            title: "Intrams", 
+            img: "images/intrams.jpg",
+            reflection: "Intrams (Intramurals) is our school sports event where students compete in various athletic activities. It promotes teamwork, sportsmanship, and healthy competition among students."
+        },
+        { 
+            title: "Science Month", 
+            img: "images/science_month.png",
+            reflection: "Science Month celebrates the importance of science in our daily lives. It encourages students to explore scientific concepts and fosters curiosity and innovation."
+        },
+        { 
+            title: "AP Month", 
+            img: "images/ap_month.png",
+            reflection: "AP (Araling Panlipunan) Month focuses on deepening students' understanding of Philippine history, culture, and society. It promotes patriotism and awareness of current social issues."
+        },
+        { 
+            title: "Booklandia", 
+            img: "images/booklandia.png",
+            reflection: "Booklandia is a literary event that encourages reading and love for books. It helps develop literacy skills and imagination through various reading activities and book-related competitions."
+        },
+        { 
+            title: "Values Pop", 
+            img: "images/values_pop.png",
+            reflection: "Values Pop is an event that promotes core values such as honesty, respect, and responsibility. It helps shape students' character and moral development."
+        },
+        { 
+            title: "Math Month", 
+            img: "images/math_month.png",
+            reflection: "Math Month celebrates the importance of mathematics in everyday life. It helps students develop problem-solving skills and appreciation for numbers and logical thinking."
+        },
+        { 
+            title: "Botb", 
+            img: "images/botb.png",
+            reflection: "Battle of the Bands is a music competition where student bands showcase their musical talents. It provides a platform for creative expression and appreciation of different music genres."
+        },
+        { 
+            title: "Noli Me Tangere", 
+            img: "images/noli_me_tangere.png",
+            reflection: "Noli Me Tangere is a theatrical adaptation of Jose Rizal's novel. It brings to life the critical issues of colonial Philippines and inspires reflection on justice and national identity."
+        },
+        { 
+            title: "Ped Xing", 
+            img: "images/ped_xing.png",
+            reflection: "Ped Xing (Pedestrian Crossing) is an event that promotes road safety awareness. It teaches students the importance of following traffic rules and being responsible pedestrians."
+        },
+        { 
+            title: "Buwan ng Wika", 
+            img: "images/BW1.jpg",
+            reflection: "Buwan ng Wika (Language Month) celebrates the Filipino language and our rich linguistic heritage. It promotes pride in our national language and encourages its proper use."
+        },
+        { 
+            title: "Cluster", 
+            img: "images/cluster1.jpg",
+            reflection: "Cluster is an event where students from different schools come together for collaborative activities. It fosters friendship, unity, and the exchange of ideas among young learners."
+        },
+        { 
+            title: "Mapeh Month", 
+            img: "images/mapeh-month.png",
+            reflection: "MAPEH Month celebrates Music, Arts, Physical Education, and Health. It emphasizes the importance of a balanced education that develops both mind and body."
+        },
         {
             title: "Credits",
             img: "images/credits.png",
-            description: "Images by Allison Pineda, Jade Imperial, and Ash Uy."
+            description: "Images by Allison Pineda, Jade Imperial, and Ash Uy.",
+            reflection: "Special thanks to all the photographers who captured these memorable moments throughout the school year."
         }
     ];
 
@@ -644,6 +689,10 @@ function showLesson(index) {
                                 <img src="${ev.img}" alt="${ev.title}" class="event-img">
                                 <h2>${ev.title}</h2>
                                 ${ev.description ? `<p>${ev.description}</p>` : ""}
+                            </div>
+                            <div class="event-reflection">
+                                <h3>Reflection</h3>
+                                <p>${ev.reflection}</p>
                             </div>`;
                     };
 
@@ -678,10 +727,10 @@ function showLesson(index) {
                     dialogueName.textContent = "Video";
                     dialogueContent.innerHTML = `
                     <div class="video-preview">
-                        <div class="facebook-video">
-                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F18BEN3S31Z%2F&show_text=0&width=560"
-                                allowfullscreen
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        <div class="google-drive-video">
+                            <iframe src="https://drive.google.com/file/d/1S_AuxlT-YRXd7fa8oveV1gddOMZrWzBi/preview"
+                                allow="autoplay"
+                                allowfullscreen>
                             </iframe>
                         </div>
                     <div class="video-reflection">
